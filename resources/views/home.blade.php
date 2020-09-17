@@ -15,6 +15,8 @@
                     @endif
 
                     You are logged in!
+                        @if(auth()->guard('web')->check()) <a href="{{url('/user/show/courses')}}">Start</a>@endif
+
                 </div>
             </div>
         </div>
